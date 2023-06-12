@@ -1,0 +1,31 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:$primaryColor;
+}
+
+.container{
+  margin-top: 1rem;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px; 
+}
+
+.row-box{
+width: 100px;
+height: 37px;
+margin-left: 1rem;
+padding: 0 0.7rem;
+background: #FFFFFF;
+border: 1px solid #CFC0FF;
+border-radius: 39px;
+}
+
+.previous-button,
+.next-button{
+border-style:none ;
+
+}

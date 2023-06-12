@@ -1,0 +1,9 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.main{
+  // background: linear-gradient(180deg, #EFF2FF -30.56%, rgba(232, 236, 255, 0) 135.85%);
+  margin: 2rem;
+  background: $background;
+  border-radius: 6px;
+}

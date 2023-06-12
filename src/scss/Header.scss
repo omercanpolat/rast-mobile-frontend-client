@@ -1,0 +1,23 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header-button{
+color: #FFFFFF;
+width: 175px;
+height: 42px;
+background:$primaryColor;
+border-radius: 39px;
+border-style:none ;
+}
+.filter-button{
+  width: 49px;
+  height: 42px;
+  background: #FFFFFF;
+  border-radius: 29px;
+}
