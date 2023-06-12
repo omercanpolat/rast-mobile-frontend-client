@@ -12,12 +12,13 @@ c.  Projede 3 sütündan oluşan bir tablo verilmiş. Kullanıcının her satır
       1. VsCode (IDE) içerisinde yeni boş bir klasör açılarak, repodan clone ile "backend api" lokal bilgisayara indirilmelidir. Bunun için açılan terminalde aşağıdaki komutlar yazılarak, çalıştırılır.
 
             $ git clone https://github.com/omercanpolat/rast-mobile-backend_api.git
+            $ cd rast-mobile-backend_api
 
       2. Aynı klasörde backend server çalıştırmak için sırasıyla:
 
             $ python -m venv env
             $ source env/Scripts/activate 
-            $ pip install - requirements.txt
+            $ pip install -r requirements.txt
             $ python manage.py makemigrations
             $ python manage.py migrate
             $ python manage.py runserver
@@ -27,10 +28,11 @@ c.  Projede 3 sütündan oluşan bir tablo verilmiş. Kullanıcının her satır
       1. VsCode (IDE) içerisine yeni boş bir klasör açılarak, repodan clone ile "frontend client" lokal bilgisayara indirilmelidir. Bunun için açılan terminalde aşağıdaki komutlar yazılarak, çalıştırılır.
 
           $ git clone https://github.com/omercanpolat/rast-mobile-frontend-client.git
+          $ cd rast-mobile-frontend-client
 
       2. Aynı klasörde frontend kısmını çalıştırmak için sırasıyla:
 
             $ yarn install
             $ yarn start
 
-      
+       3. Web sitesi çalışınca açılan ilk olarak veriler boş gelecektir. Arayüzde "Yeni Hesap Ekle" butonuna tıklayarak açılan popup menüye gerekli alanları doldurarak kaydederiz. Kayıt eklendikçe backend tarafına kayıtlar lokalde devamlı kalacak şekilde kaydedilecektir.
