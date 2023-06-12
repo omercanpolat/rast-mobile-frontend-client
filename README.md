@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+1. Projeden ne anladığınızı ve hangi adımları izleyerek ilerlediğinizi bir doküman olarak yazıp proje içerisine ekleyiniz?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+a. Öncelikle Backend kısmını Django ile yazdım ve Github Repoma yükledim. "main" adlı projeme "link" adlı app ekleyerek gerekli models.py, serializers.py vs. dosyalarımı üretip, kullanacağım "end point"ler için urls.py'da gerekli düzenlemeleri yaptım. 
 
-## Available Scripts
+b. Devamında frontend kısmı için gönderilen Figma dizaynına uygun olarak gerekli düzenlemeleri React üzerinden yaptım. Backend ile bağlantılarını sağladım ve çalıştırdım. CRUD işlemeleri için Auth.Token ve kullanıcı şifresi gereksinimleri istenmediği için o bölümleri backend ve frontend tarafında yapmadım/ama yapılabilir.
 
-In the project directory, you can run:
+c.  Projede 3 sütündan oluşan bir tablo verilmiş. Kullanıcının her satıra gerekli bilgileri girebileceği, yeni kayıt ekleyebileceği, listeleme, filtreleme, sayfalama ve arama yapabileceği bir DataGrid web tasarımı yapılması istenmiş.
 
-### `npm start`
+2. Uygulamanın çalıştıralbilmesi için gerekli yönergeler şöyledir:
+ 
+ A. Backend kısmı için:
+      1. VsCode (IDE) içerisinde yeni boş bir klasör açılarak, repodan clone ile "backend api" lokal bilgisayara indirilmelidir. Bunun için açılan terminalde aşağıdaki komutlar yazılarak, çalıştırılır.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+            $ git clone https://github.com/omercanpolat/rast-mobile-backend_api.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+      2. Aynı klasörde backend server çalıştırmak için sırasıyla:
 
-### `npm test`
+            $ python -m venv env
+            $ source env/Scripts/activate 
+            $ pip install - requirements.txt
+            $ python manage.py makemigrations
+            $ python manage.py migrate
+            $ python manage.py runserver
+  
+  B. Frontend kısmının end pointlerden gelecek verilerle birlikte çalışması için backend server aynı lokal bilgisayarda, aynı anda çalışıyor olmalıdır:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+      1. VsCode (IDE) içerisine yeni boş bir klasör açılarak, repodan clone ile "frontend client" lokal bilgisayara indirilmelidir. Bunun için açılan terminalde aşağıdaki komutlar yazılarak, çalıştırılır.
 
-### `npm run build`
+          $ git clone https://github.com/omercanpolat/rast-mobile-frontend-client.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      2. Aynı klasörde frontend kısmını çalıştırmak için sırasıyla:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+            $ yarn install
+            $ yarn start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      
