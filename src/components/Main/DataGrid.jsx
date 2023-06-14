@@ -83,13 +83,19 @@ const fetchData = async () => {
       <table className="table table-striped table-hover table-primary mt-3">
         <thead className="thead">
           {/* Table header */}
-          <tr className="thead-row">
+          <tr>
             {/* <th scope="col">#id</th> */}
-            <th scope="col">Sosyal Medya Linki</th>
-            <th scope="col">Sosyal Medya Adı</th>
-            <th scope="col">Açıklama</th>
+            <th scope="col">
+              <span className="thead-row">Sosyal Medya Linki</span>
+            </th>
+            <th scope="col">
+              <span className="thead-row">Sosyal Medya Adı</span>
+            </th>
+            <th scope="col">
+              <span className="thead-row">Açıklama</span>
+            </th>
             <th scope="col" className="text-center">
-              Sil
+              <span className="thead-row">Sil</span>
             </th>
           </tr>
         </thead>
