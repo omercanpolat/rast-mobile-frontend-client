@@ -77,13 +77,13 @@ const fetchData = async () => {
   return (
     <div className="container">
       <div className="header-container">
-         <Header links={links} getLinks={getLinks} />
+        <Header links={links} getLinks={getLinks} />
       </div>
-     
+
       <table className="table table-striped table-hover table-primary mt-3">
-        <thead>
+        <thead className="thead">
           {/* Table header */}
-          <tr>
+          <tr className="thead-row">
             {/* <th scope="col">#id</th> */}
             <th scope="col">Sosyal Medya Linki</th>
             <th scope="col">Sosyal Medya Adı</th>
@@ -152,7 +152,7 @@ const fetchData = async () => {
 
         <div>
           <button
-            className="previous-button m-2"
+            className="previous-button"
             disabled={currentPage === 1}
             onClick={() => handlePageChange(currentPage - 1)}
           >
@@ -163,7 +163,7 @@ const fetchData = async () => {
           </button>
           <span>{currentPage}</span> <span>of 4 </span>
           <button
-            className="next-button m-2"
+            className="next-button"
             disabled={currentPage === totalPages}
             onClick={() => handlePageChange(currentPage + 1)}
           >
