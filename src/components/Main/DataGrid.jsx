@@ -137,7 +137,7 @@ const fetchData = async () => {
       {/* <EditLink editItem={editItem} getLinks={getLinks}  /> */}
       <div className="pagination">
         <div>
-          <span>Show:</span>
+          <span className="show-row">Show:</span>
 
           <select
             value={perPage}
@@ -156,7 +156,7 @@ const fetchData = async () => {
           </select>
         </div>
 
-        <div>
+        <div className="previous-next">
           <button
             className="previous-button"
             disabled={currentPage === 1}
@@ -166,7 +166,7 @@ const fetchData = async () => {
               {" "}
               <FcPrevious />{" "}
             </span>
-          </button>
+          </button >
           <span>{currentPage}</span> <span>of 4 </span>
           <button
             className="next-button"

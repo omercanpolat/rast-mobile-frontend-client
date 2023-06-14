@@ -23,6 +23,7 @@
 .thead-row{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  font-size: 13px;
 }
 
 .row-box{
@@ -33,10 +34,20 @@ padding: 0 0.7rem;
 background: #FFFFFF;
 border: 1px solid #CFC0FF;
 border-radius: 39px;
+font-size: 10px;
+
+
+
 }
 
+.show-row{
+font-size: 12px;
+}
 .previous-button,
 .next-button{
 border-style:none ;
+}
 
+.previous-next{
+  font-size: 10px;
 }
